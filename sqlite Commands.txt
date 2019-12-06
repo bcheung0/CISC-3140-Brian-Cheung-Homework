@@ -1,0 +1,5 @@
+.mode csv
+.import C:sqlite3/6312.csv feedback
+
+
+
