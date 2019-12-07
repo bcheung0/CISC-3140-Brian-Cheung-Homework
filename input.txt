@@ -12,29 +12,32 @@ comments TEXT);;
 .mode csv
 .import C:sqlite3/6312.csv feedback
 
+
 select avg(organization) from feedback;
-
-select avg(aboutTopic) from feedback;
-
+4.52380952380952
+select avg(aboutTopics) from feedback;
+4.57142857142857
 select avg(clearUnderstand) from feedback;
-
+4.47619047619048
 select avg(learnNew) from feedback;
-
+4.19047619047619
 select min(organization) from feedback;
-
+4
 select min(aboutTopic) from feedback;
-
+4
 select min(clearUnderstand) from feedback;
-
+4
 select min(learnNew) from feedback;Orc
-
+3
 select max(organization) from feedback;
-
+5
 select max(aboutTopic) from feedback;
-
+5
 select max(clearUnderstand) from feedback;
-
+5
 select max(learnNew) from feedback;
+5
+
 
 
 
