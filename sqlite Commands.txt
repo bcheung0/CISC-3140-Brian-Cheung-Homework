@@ -1,5 +1,40 @@
+ Create table feedback(
+timestamp TEXT NOT NULL,
+organiztion INT NOT NULL,
+clearUnderstand INT NOT NULL,
+aboutTopics INT NOT NULL,
+learnNew INT NOT NULL,
+Learned TEXT NOT NULL,
+worked_well TEXT NOT NULL,
+improvements TEXT NOT NULL,
+comments TEXT);;
+
 .mode csv
 .import C:sqlite3/6312.csv feedback
+
+select avg(organization) from feedback;
+
+select avg(aboutTopic) from feedback;
+
+select avg(clearUnderstand) from feedback;
+
+select avg(learnNew) from feedback;
+
+select min(organization) from feedback;
+
+select min(aboutTopic) from feedback;
+
+select min(clearUnderstand) from feedback;
+
+select min(learnNew) from feedback;Orc
+
+select max(organization) from feedback;
+
+select max(aboutTopic) from feedback;
+
+select max(clearUnderstand) from feedback;
+
+select max(learnNew) from feedback;
 
 
 
